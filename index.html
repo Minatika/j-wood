@@ -11,7 +11,7 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Home</a></li>
+          <li class="main-nav__item main-nav__item--current"><a>Home</a></li>
           <li class="main-nav__item"><a class="main-nav__item-link" href="#about-me">About me</a></li>
           <li class="main-nav__item"><a class="main-nav__item-link" href="#portfolio">Portfolio</a></li>
           <li class="main-nav__item"><a class="main-nav__item-link" href="#contact">Contact</a></li>
@@ -27,5 +27,107 @@
       <a class="scroll__btn" href="#about-me">Down</a>
     </div>
   </header>
+  <main>
+    <section class="about-me" id="about-me">
+      <nav class="main-nav main-nav--dark">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--dark" href="#home">Home</a></li>
+            <li class="main-nav__item main-nav__item--current"><a>About me</a></li>
+            <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--dark" href="#portfolio">Portfolio</a></li>
+            <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--dark" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="about-me__wrapper">
+        <div class="about-me__photo">
+          <img class="about-me__photo-img" src="img/Jason-Wood.jpg" alt="Jason Wood">
+        </div>
+        <div class="about-me__text">
+          <h2 class="about-me__title">About me</h2>
+          <p class="about-me__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p class="about-me__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur.</p>
+          <p class="about-me__sign">Jason Wood</p>
+        </div>
+        <div class="scroll">
+          <p class="scroll__title">Keep scrolling, there is still more to come.</p>
+          <a class="scroll__btn" href="#portfolio">Down</a>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__item-link" href="#home">Home</a></li>
+            <li class="main-nav__item"><a class="main-nav__item-link" href="#about-me">About me</a></li>
+            <li class="main-nav__item main-nav__item--current"><a>Portfolio</a></li>
+            <li class="main-nav__item"><a class="main-nav__item-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="portfolio__wrapper">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <div class="portfolio__items">
+          <div class="portfolio__item"><img src="img/portfolio-01.jpg" alt="photo-1"></div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-02.jpg" width="279" height="250" alt="photo-2">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-03.jpg" width="279" height="250" alt="photo-3">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-04.jpg" width="279" height="250" alt="photo-4">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-05.jpg" width="279" height="250" alt="photo-5">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-06.jpg" width="279" height="250" alt="photo-6">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-07.jpg" width="279" height="250" alt="photo-7">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-08.jpg" width="279" height="250" alt="photo-8">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-09.jpg" width="279" height="250" alt="photo-9">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-10.jpg" width="279" height="250" alt="photo-10">
+          </div>
+        </div>
+        <div class="scroll">
+          <p class="scroll__title">do you want to see it with your own eyes? Scroll!.</p>
+          <a class="scroll__btn" href="#contact">Down</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <nav class="main-nav main-nav--dark">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--dark" href="#home">Home</a></li>
+            <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--dark" href="#about-me">About me</a></li>
+            <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--dark" href="#portfolio">Portfolio</a></li>
+            <li class="main-nav__item main-nav__item--current"><a>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="contact__wrapper">
+        <p class="contact__subtitle">Mail:</p>
+        <p class="contact__mail">Jason@wood.com</p>
+        <p class="contact__subtitle">Phone:</p>
+        <p class="contact__phone">+44 212 432 444</p>
+        <p class="contact__subtitle">Social media:</p>
+        <p class="contact__social">
+          <a class="social-link social-link--fb" href="https://ru-ru.facebook.com/">Jason in Facebook</a>
+          <a class="social-link social-link--tw" href="https://twitter.com/">Jason in Twitter</a>
+          <a class="social-link social-link--in" href="https://www.instagram.com/">Jason in Instagram</a>
+        </p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

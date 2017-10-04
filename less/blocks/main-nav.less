@@ -3,6 +3,7 @@
   min-height: 100px;
   margin: 0;
   padding: 0;
+  color: @color-secondary;
 
   &::after {
     content: "";
@@ -13,6 +14,14 @@
     height: 1px;
     margin: 0 3.4%;
     background-color: @color-secondary;
+  }
+
+  &--dark {
+    color: @color-dark;
+
+    &::after {
+      background-color: @color-dark;
+    }
   }
 }
 
@@ -35,7 +44,11 @@
   padding: 39px 50px 37px 0;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  color: @color-secondary;
+//  color: @color-secondary;
+
+  &--current {
+    font-weight: bold;
+  }
 
   &:last-of-type {
     padding-right: 0;
@@ -46,4 +59,26 @@
 .main-nav__item-link {
   text-decoration: none;
   color: @color-secondary;
+
+  &:hover {
+    color: @color-dark;
+  }
+
+  &:active {
+    color: @color-dark;
+    opacity: 0.5;
+  }
+
+  &--dark {
+    color: @color-dark;
+
+    &:hover {
+      color: @color-text;
+    }
+
+    &:active {
+      color: @color-text;
+      opacity: 0.5;
+    }
+  }
 }

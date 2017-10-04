@@ -1,24 +1,25 @@
 .page-header {
-  width: auto;
   min-height: 1080px;
   margin: 0;
   padding: 0;
-  background-color: 000;
+  background-color: @color-secondary;
   background-image: url("../img/bg-header.jpg");
-  background-position: 50% 50%;
-  background-repeat: 0;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
 }
 
 .page-header__logo {
   position: relative;
   width: 473px;
   height: 474px;
-  margin: 149px auto 50px;
+  margin: 0 auto 50px;
+  padding-top: 149px;
+  background-color: transparent;
 
   &::after {
     content: "TM";
     position: absolute;
-    top: 31px;
+    top: 180px;
     right: -6px;
     font-size: 36px;
     line-height: 36px;
