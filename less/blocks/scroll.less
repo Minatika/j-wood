@@ -1,0 +1,33 @@
+.scroll {
+  .container-fluid();
+  text-align: center;
+}
+
+.scroll__title {
+  margin: 0 auto 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: @color-secondary;
+}
+
+.scroll__btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  font-size: 0;
+  background-image: url("../img/arrow.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
